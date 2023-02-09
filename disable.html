@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disable Reminder</title>
+</head>
+<body>
+  <h1>Disable Reminder</h1>
+  <form>
+    <label for="select-date">Select Date:</label>
+    <input type="date" id="select-date" name="select-date" required>
+    <br><br>
+
+    <label for="select-subject">Select Subject:</label>
+    <select id="select-subject" name="select-subject" required>
+      <option value="">---Select Subject---</option>
+      <option value="math">Subject1</option>
+      <option value="history">Subject2</option>
+      <option value="english">Subject3</option>
+    </select>
+    <br><br>
+
+    <label for="select-reminder">Reminders:</label>
+    <select id="select-reminder" name="select-reminder" required>
+      <option value="">---Select Reminder---</option>
+      <option value="reminder1">Reminder 1 - Description 1</option>
+      <option value="reminder2">Reminder 2 - Description 2</option>
+      <option value="reminder3">Reminder 3 - Description 3</option>
+    </select>
+    <br><br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" readonly></textarea>
+    <br><br>
+
+    <input type="submit" value="Log out">
+  </form>
+</body>
+</html>

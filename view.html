@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Your Reminders</title>
+	<style>
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+		}
+		
+		th {
+			background-color: #dddddd;
+		}
+	</style>
+</head>
+<body>
+	<h1>View Your Reminders</h1>
+	<form>
+		<label for="from_date">Select From Date:</label>
+		<input type="text" id="from_date" name="from_date">
+		<input type="button" value="Calendar Icon">
+		
+		<label for="to_date">Select To Date:</label>
+		<input type="text" id="to_date" name="to_date">
+		<input type="button" value="Calendar Icon">
+		
+		<label for="subject">Subject:</label>
+		<select id="subject" name="subject">
+			<option value="">--Select Subject--</option>
+			<option value="subject1">Subject 1</option>
+			<option value="subject2">Subject 2</option>
+			<option value="subject3">Subject 3</option>
+		</select>
+	</form>
+	
+	<table>
+		<tr>
+			<th>Reminder Name</th>
+			<th>Reminder Subject</th>
+			<th>Reminder Description</th>
+			<th>Email Address</th>
+			<th>Contact No</th>
+			<th>SMS No</th>
+			<th>Status</th>
+			<th>Recurrence Frequency</th>
+			<th>Check Box</th>
+		</tr>
+		<tr>
+			<td>Reminder 1</td>
+			<td>Subject 1</td>
+			<td>Description for Reminder 1</td>
+			<td>email1@example.com</td>
+			<td>1234567890</td>
+			<td>0987654321</td>
+			<td>Active</td>
+			<td>Daily</td>
+			<td><input type="checkbox"></td>
+		</tr>
+		<tr>
+			<td>Reminder 2</td>
+			<td>Subject 2</td>
+			<td>Description for Reminder 2</td>
+			<td>email2@example.com</td>
+			<td>2345678901</td>
+			<td>1987654320</td>
+			<td>Inactive</td>
+</tr>
+</table>
+</body>
+</html>

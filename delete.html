@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Delete Reminder</title>
+  </head>
+  <body>
+    <h1>Delete Reminder</h1>
+
+    <form>
+      <p>
+        <label for="date">Select Date:</label>
+        <input type="text" id="date" name="date" required />
+        <img src="calendar_icon.png" alt="Calendar Icon" />
+      </p>
+
+      <p>
+        <label for="subject">Select Subject:</label>
+        <select id="subject" name="subject" required>
+          <option value="">--Select a subject--</option>
+          <option value="Subject 1">Subject 1</option>
+          <option value="Subject 2">Subject 2</option>
+          <option value="Subject 3">Subject 3</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="reminder">Reminders:</label>
+        <select id="reminder" name="reminder" required>
+          <option value="">--Select a reminder--</option>
+          <option value="Reminder 1">Reminder 1 - Description of Reminder 1</option>
+          <option value="Reminder 2">Reminder 2 - Description of Reminder 2</option>
+          <option value="Reminder 3">Reminder 3 - Description of Reminder 3</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" readonly></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Delete Reminder" />
+      </p>
+    </form>
+
+    <p><a href="#">Log out</a></p>
+  </body>
+</html>
